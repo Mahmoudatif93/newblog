@@ -1,15 +1,33 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '5050821b37c0312d5f65f6bfdf1b5a0fcd383a09',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
     'versions' => array(
+        'adldap2/adldap2' => array(
+            'pretty_version' => 'v10.3.3',
+            'version' => '10.3.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../adldap2/adldap2',
+            'aliases' => array(),
+            'reference' => 'c2a8f72455d3438377d955fc0f4b9ed836b47463',
+            'dev_requirement' => false,
+        ),
+        'adldap2/adldap2-laravel' => array(
+            'pretty_version' => 'v6.1.5',
+            'version' => '6.1.5.0',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../adldap2/adldap2-laravel',
+            'aliases' => array(),
+            'reference' => '082e863d15923cf9b4bff69fa81c8ebd23e4a7c7',
+            'dev_requirement' => false,
+        ),
         'asm89/stack-cors' => array(
             'pretty_version' => 'v2.0.3',
             'version' => '2.0.3.0',
@@ -39,6 +57,24 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'directorytree/ldaprecord' => array(
+            'pretty_version' => 'v2.6.3',
+            'version' => '2.6.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../directorytree/ldaprecord',
+            'aliases' => array(),
+            'reference' => '5c93ec6d1ef458290825a8b0a148946dce7c1e7a',
+            'dev_requirement' => false,
+        ),
+        'directorytree/ldaprecord-laravel' => array(
+            'pretty_version' => 'v2.4.0',
+            'version' => '2.4.0.0',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../directorytree/ldaprecord-laravel',
+            'aliases' => array(),
+            'reference' => '1f6c40bbd8857236225c0ce7aa3a088c484e2efd',
+            'dev_requirement' => false,
         ),
         'doctrine/inflector' => array(
             'pretty_version' => '2.0.3',
@@ -374,12 +410,12 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '5050821b37c0312d5f65f6bfdf1b5a0fcd383a09',
             'dev_requirement' => false,
         ),
         'laravel/tinker' => array(
@@ -1330,6 +1366,15 @@
             'aliases' => array(),
             'reference' => '34a41e998c2183e22995f158c581e7b5e755ab9e',
             'dev_requirement' => true,
+        ),
+        'tightenco/collect' => array(
+            'pretty_version' => 'v8.34.0',
+            'version' => '8.34.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../tightenco/collect',
+            'aliases' => array(),
+            'reference' => 'b069783ab0c547bb894ebcf8e7f6024bb401f9d2',
+            'dev_requirement' => false,
         ),
         'tijsverkoyen/css-to-inline-styles' => array(
             'pretty_version' => '2.2.3',

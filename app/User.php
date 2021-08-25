@@ -6,12 +6,14 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Laratrust\Traits\LaratrustUserTrait;
-
-class User extends Authenticatable implements JWTSubject
+//use Laratrust\Traits\LaratrustUserTrait;
+use LdapRecord\Laravel\Auth\LdapAuthenticatable;
+use LdapRecord\Laravel\Auth\AuthenticatesWithLdap;
+class User extends Authenticatable implements LdapAuthenticatable
 {
 
-    use LaratrustUserTrait;
+  //  use LaratrustUserTrait;
+  use AuthenticatesWithLdap;
     use Notifiable;
 
     /**
